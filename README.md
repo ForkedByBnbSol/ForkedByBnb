@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="170x" src="https://cdn.xoa.me/uploads/8a93c3fe-bb1d-4de1-9122-04a96ec06f5f.png" />
+  <img height="170x" src="https://cdn.discordapp.com/attachments/1415994670793756793/1423795254091452626/ChatGPT_Image_Oct_3_2025_11_08_11_PM.png?ex=68e19c29&is=68e04aa9&hm=31fb9b21d449407463d6bea9ed73085a758847475c9afd9be861b2dd8d754bd0&" />
 
   <h1>Bolana</h1>
 
@@ -166,3 +166,4 @@ Bolana represents the future that Anatoly envisioned: a world where blockchain n
     <img src="https://contrib.rocks/image?repo=bolana/bolana" width="100%" />
   </a>
 </div>
+

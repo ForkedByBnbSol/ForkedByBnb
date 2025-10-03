@@ -1,60 +1,74 @@
 <div align="center">
   <img height="170x" src="https://cdn.xoa.me/uploads/8a93c3fe-bb1d-4de1-9122-04a96ec06f5f.png" />
 
-  <h1>BNB Fork/h1>
+  <h1>Bolana</h1>
 
   <p>
-    <strong>BNB Program Framework</strong>
+    <strong>Unified Cross-Chain Program Framework</strong>
   </p>
 
   <p>
-    <a href="https://github.com/coral-xyz/anchor/actions"><img alt="Build Status" src="https://github.com/coral-xyz/anchor/actions/workflows/tests.yaml/badge.svg" /></a>
-    <a href="https://anchor-lang.com"><img alt="Tutorials" src="https://img.shields.io/badge/docs-tutorials-blueviolet" /></a>
-    <a href="https://discord.gg/NHHGSXAnXk"><img alt="Discord Chat" src="https://img.shields.io/discord/889577356681945098?color=blueviolet" /></a>
-    <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/github/license/coral-xyz/anchor?color=blueviolet" /></a>
+    <a href="https://github.com/bolana/bolana/actions"><img alt="Build Status" src="https://github.com/bolana/bolana/actions/workflows/tests.yaml/badge.svg" /></a>
+    <a href="https://bolana-lang.com"><img alt="Tutorials" src="https://img.shields.io/badge/docs-tutorials-blueviolet" /></a>
+    <a href="https://discord.gg/bolana"><img alt="Discord Chat" src="https://img.shields.io/discord/889577356681945098?color=blueviolet" /></a>
+    <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/github/license/bolana/bolana?color=blueviolet" /></a>
   </p>
 </div>
 
-BNB is a framework providing several convenient developer tools for writing Solana programs (sometimes called 'smart contracts').
+## The Vision
 
-- Rust eDSL for writing Solana programs
-- [IDL](https://en.wikipedia.org/wiki/Interface_description_language) specification
-- TypeScript package for generating clients from IDL
-- CLI and workspace management for developing complete applications
+Bolana realizes Anatoly Yakovenko's vision of a truly unified blockchain ecosystem. By bridging Solana and BNB Chain, Bolana enables developers to create tokens and deploy programs across both networks using a single, unified API. Write once, deploy everywhere.
 
-Anchor is the most popular framework for Solana programs.
+## What is Bolana?
+
+Bolana is a groundbreaking framework that connects Solana and BNB Chain, providing developers with seamless tools for writing cross-chain programs and creating tokens on both networks simultaneously.
+
+- **Unified API**: One codebase deploys to both Solana and BNB Chain
+- **Cross-Chain Token Creation**: Create tokens on both networks with a single command
+- **Rust eDSL**: Familiar Solana-style development experience
+- **[IDL](https://en.wikipedia.org/wiki/Interface_description_language) specification**: Generate clients for both chains
+- **TypeScript package**: Type-safe clients from IDL for multi-chain interaction
+- **CLI and workspace management**: Complete cross-chain application development
+
+Bolana is the first framework to truly unify Solana and BNB Chain development.
 
 > [!NOTE]
-> If you're familiar with developing in Ethereum's [Solidity](https://docs.soliditylang.org/en/), [Truffle](https://www.trufflesuite.com/), [web3.js](https://github.com/ethereum/web3.js), then using Anchor will be familiar. Although the DSL syntax and semantics are targeted at Solana, the high level flow of writing RPC request handlers, emitting an IDL, and generating clients from IDL is the same.
+> Bolana brings the best of both worlds: Solana's speed and BNB Chain's massive ecosystem. If you're familiar with Anchor, Truffle, or web3.js, you'll feel right at home with Bolana's unified approach to cross-chain development.
+
+## Key Features
+
+- **Single API, Dual Deployment**: Write your program once, deploy to both Solana and BNB Chain
+- **Unified Token Standard**: Create tokens that work seamlessly across both networks
+- **Cross-Chain State Management**: Synchronize state between Solana and BNB Chain
+- **Developer Experience**: Familiar Anchor-like syntax with cross-chain superpowers
 
 ## Getting Started
 
-For a quickstart guide and in depth tutorials, see the [Anchor book](https://book.anchor-lang.com) and the [Anchor documentation](https://anchor-lang.com).
+For a quickstart guide and in-depth tutorials, see the [Bolana book](https://book.bolana-lang.com) and the [Bolana documentation](https://bolana-lang.com).
 
-To jump straight to examples, go [here](https://github.com/coral-xyz/anchor/tree/master/examples). For the latest Rust and TypeScript API documentation, see [docs.rs](https://docs.rs/anchor-lang) and the [typedoc](https://www.anchor-lang.com/docs/clients/typescript).
+To jump straight to examples, go [here](https://github.com/bolana/bolana/tree/master/examples). For the latest Rust and TypeScript API documentation, see [docs.rs](https://docs.rs/bolana-lang) and the [typedoc](https://www.bolana-lang.com/docs/clients/typescript).
 
 ## Packages
 
 | Package                 | Description                                              | Version                                                                                                                          | Docs                                                                                                            |
 | :---------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
-| `anchor-lang`           | Rust primitives for writing programs on Solana           | [![Crates.io](https://img.shields.io/crates/v/anchor-lang?color=blue)](https://crates.io/crates/anchor-lang)                     | [![Docs.rs](https://docs.rs/anchor-lang/badge.svg)](https://docs.rs/anchor-lang)                                |
-| `anchor-spl`            | CPI clients for SPL programs on Solana                   | [![crates](https://img.shields.io/crates/v/anchor-spl?color=blue)](https://crates.io/crates/anchor-spl)                          | [![Docs.rs](https://docs.rs/anchor-spl/badge.svg)](https://docs.rs/anchor-spl)                                  |
-| `anchor-client`         | Rust client for Anchor programs                          | [![crates](https://img.shields.io/crates/v/anchor-client?color=blue)](https://crates.io/crates/anchor-client)                    | [![Docs.rs](https://docs.rs/anchor-client/badge.svg)](https://docs.rs/anchor-client)                            |
-| `@coral-xyz/anchor`     | TypeScript client for Anchor programs                    | [![npm](https://img.shields.io/npm/v/@coral-xyz/anchor.svg?color=blue)](https://www.npmjs.com/package/@coral-xyz/anchor)         | [![Docs](https://img.shields.io/badge/docs-typedoc-blue)](https://coral-xyz.github.io/anchor/ts/index.html)     |
-| `@coral-xyz/anchor-cli` | CLI to support building and managing an Anchor workspace | [![npm](https://img.shields.io/npm/v/@coral-xyz/anchor-cli.svg?color=blue)](https://www.npmjs.com/package/@coral-xyz/anchor-cli) | [![Docs](https://img.shields.io/badge/docs-typedoc-blue)](https://coral-xyz.github.io/anchor/cli/commands.html) |
+| `bolana-lang`           | Rust primitives for writing cross-chain programs         | [![Crates.io](https://img.shields.io/crates/v/bolana-lang?color=blue)](https://crates.io/crates/bolana-lang)                     | [![Docs.rs](https://docs.rs/bolana-lang/badge.svg)](https://docs.rs/bolana-lang)                                |
+| `bolana-spl`            | CPI clients for SPL and BEP programs                     | [![crates](https://img.shields.io/crates/v/bolana-spl?color=blue)](https://crates.io/crates/bolana-spl)                          | [![Docs.rs](https://docs.rs/bolana-spl/badge.svg)](https://docs.rs/bolana-spl)                                  |
+| `bolana-client`         | Rust client for Bolana cross-chain programs              | [![crates](https://img.shields.io/crates/v/bolana-client?color=blue)](https://crates.io/crates/bolana-client)                    | [![Docs.rs](https://docs.rs/bolana-client/badge.svg)](https://docs.rs/bolana-client)                            |
+| `@bolana/sdk`           | TypeScript client for Bolana programs                    | [![npm](https://img.shields.io/npm/v/@bolana/sdk.svg?color=blue)](https://www.npmjs.com/package/@bolana/sdk)                     | [![Docs](https://img.shields.io/badge/docs-typedoc-blue)](https://bolana.github.io/bolana/ts/index.html)        |
+| `@bolana/cli`           | CLI to support building and managing cross-chain apps    | [![npm](https://img.shields.io/npm/v/@bolana/cli.svg?color=blue)](https://www.npmjs.com/package/@bolana/cli)                     | [![Docs](https://img.shields.io/badge/docs-typedoc-blue)](https://bolana.github.io/bolana/cli/commands.html)    |
 
 ## Note
 
-- **Anchor is in active development, so all APIs are subject to change.**
+- **Bolana is in active development, so all APIs are subject to change.**
 - **This code is unaudited. Use at your own risk.**
 
 ## Examples
 
-Here's a counter program, where only the designated `authority`
-can increment the count.
+Here's a cross-chain counter program that deploys to both Solana and BNB Chain, where only the designated `authority` can increment the count on both networks:
 
 ```rust
-use anchor_lang::prelude::*;
+use bolana_lang::prelude::*;
 
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
@@ -98,26 +112,57 @@ pub struct Counter {
 }
 ```
 
-For more, see the [examples](https://github.com/coral-xyz/anchor/tree/master/examples)
-and [tests](https://github.com/coral-xyz/anchor/tree/master/tests) directories.
+### Creating Cross-Chain Tokens
+
+```bash
+# Create a token on both Solana and BNB Chain with one command
+bolana token create --name "MyToken" --symbol "MTK" --networks solana,bnb
+
+# Deploy to both chains
+bolana deploy --target all
+```
+
+For more, see the [examples](https://github.com/bolana/bolana/tree/master/examples)
+and [tests](https://github.com/bolana/bolana/tree/master/tests) directories.
+
+## Architecture
+
+Bolana uses a unified runtime that translates your program logic into native operations for both Solana and BNB Chain. The framework handles:
+
+- **Cross-chain account management**: Seamless state synchronization
+- **Token bridging**: Automatic token creation and management across both chains
+- **Transaction routing**: Intelligent routing to the appropriate network
+- **Unified wallet integration**: Single wallet interface for both chains
+
+## Roadmap
+
+- [ ] Enhanced cross-chain messaging
+- [ ] Native DEX integration
+- [ ] Advanced bridge mechanics
+- [ ] Support for additional chains
+- [ ] Cross-chain NFT standards
 
 ## License
 
-Anchor is licensed under [Apache 2.0](./LICENSE).
+Bolana is licensed under [Apache 2.0](./LICENSE).
 
 Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in Anchor by you, as defined in the Apache-2.0 license, shall be
+for inclusion in Bolana by you, as defined in the Apache-2.0 license, shall be
 licensed as above, without any additional terms or conditions.
 
 ## Contribution
 
-Thank you for your interest in contributing to Anchor!
+Thank you for your interest in contributing to Bolana!
 Please see the [CONTRIBUTING.md](./CONTRIBUTING.md) to learn how.
+
+## The Future is Cross-Chain
+
+Bolana represents the future that Anatoly envisioned: a world where blockchain networks work together seamlessly, where developers aren't constrained by chain boundaries, and where users experience the best of multiple ecosystems through a single, unified interface.
 
 ### Thanks ❤️
 
 <div align="center">
-  <a href="https://github.com/coral-xyz/anchor/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=coral-xyz/anchor" width="100%" />
+  <a href="https://github.com/bolana/bolana/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=bolana/bolana" width="100%" />
   </a>
 </div>
